@@ -1,0 +1,2 @@
+cut -d ',' -f2 info.csv | grep -oE "[a-zA-Z0-9.-]+\.[a-zA-Z]{2,.}' | sort | uniq > emails.txt
+ps aux --sort=cmd | awk "{print \$2, \$11}" > processes.txt
